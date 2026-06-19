@@ -37,11 +37,11 @@ jobs:
           ref: "${{inputs.base-pr-branch}}"
           path: "target"
 
-      - name: Checkout actions/reusable-workflows repository
+      - name: Checkout priya-kinthali/reusable-workflows repository
         uses: actions/checkout@v5
         with:
-          repository: "actions/reusable-workflows"
-          ref: "main"
+          repository: "priya-kinthali/reusable-workflows"
+          ref: "test-esm"
           path: "source"
 
       - name: Configure git service account
